@@ -1,1 +1,286 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dhanashri ❤️</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background: linear-gradient(135deg, #ffe0ec, #ffc1d9, #fff0f5);
+  color: #8e2452;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  font-size: clamp(38px, 9vw, 65px);
+  margin: 20px 0;
+  color: #d63384;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #c2185b;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 17px;
+}
+
+.subtitle {
+  font-size: 19px;
+  color: #9e3765;
+}
+
+button {
+  border: none;
+  padding: 15px 30px;
+  margin-top: 25px;
+  border-radius: 30px;
+  background: #e84393;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #d6338455;
+}
+
+button:hover {
+  background: #c2185b;
+}
+
+.heart {
+  position: fixed;
+  bottom: -30px;
+  animation: floatUp 7s linear infinite;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.card {
+  background: #ffffffb8;
+  padding: 30px 22px;
+  max-width: 650px;
+  margin: auto;
+  border-radius: 25px;
+  box-shadow: 0 8px 30px #b8326a20;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  max-width: 650px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 4px solid white;
+  box-shadow: 0 5px 15px #a52a5a25;
+}
+
+.letter {
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+}
+
+.hidden {
+  display: none;
+}
+
+.cake {
+  font-size: 90px;
+  margin: 20px;
+}
+
+footer {
+  padding: 30px;
+  color: #a32d62;
+}
+
+@media(max-width: 400px) {
+  .gallery {
+    gap: 8px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.className = "heart";
+  heart.innerHTML = ["❤️","💕","💗","💖"][
+    Math.floor(Math.random() * 4)
+  ];
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = (15 + Math.random() * 20) + "px";
+  heart.style.animationDuration = (4 + Math.random() * 5) + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => heart.remove(), 9000);
+}
+setInterval(createHeart, 500);
+</script>
+
+<!-- Welcome -->
+<section class="hero">
+  <p>✨ A Special Day For Someone Special ✨</p>
+
+  <h1>Happy Birthday<br>Dhanashri ❤️</h1>
+
+  <p class="subtitle">
+    Today is all about you! 🌸
+  </p>
+
+  <p style="margin-top:20px">
+    I have something special for you...
+  </p>
+
+  <button onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">
+    Open Your Surprise 💌
+  </button>
+</section>
+
+<!-- Letter -->
+<section id="letter">
+  <h2>A Little Message For You 💗</h2>
+
+  <div class="card">
+    <p class="letter">
+      Dear Dhanashri, ❤️<br><br>
+
+      Happy Birthday! 🎂
+
+      Aaj ka din bahut special hai,
+      because today is the birthday of a
+      very special person.
+
+      Tumhari smile hamesha aise hi bani rahe,
+      tumhare saare dreams poore hon,
+      aur tumhari life khushiyon se bhari rahe.
+
+      Thank you for being a beautiful part
+      of my life.
+
+      Har chhoti memory aur har special moment
+      mere liye precious hai.
+
+      Keep smiling, keep shining and
+      always be happy! 🌷
+
+      <br><br>
+      Once again, Happy Birthday Dhanashri! 💕
+
+      <br><br>
+      With lots of good wishes,<br>
+      Someone who cares for you ❤️
+    </p>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section>
+  <h2>Our Beautiful Memories 📸</h2>
+
+  <p style="margin-bottom:25px">
+    Every picture has a little story...
+  </p>
+
+  <div class="gallery">
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+    <img src="photo4.jpg" alt="Memory 4">
+  </div>
+</section>
+
+<!-- Special Wish -->
+<section>
+  <div class="card">
+    <h2>A Wish Just For You 🌸</h2>
+
+    <p>
+      May your days be filled with happiness,
+      your heart with peace,
+      and your future with beautiful surprises.
+    </p>
+
+    <div class="cake">🎂</div>
+
+    <h2>Happy Birthday! ❤️</h2>
+
+    <button onclick="showSurprise()">
+      One Last Surprise 💝
+    </button>
+
+    <div id="surprise" class="hidden">
+      <h2 style="margin-top:25px">
+        You Are Special! 💖
+      </h2>
+
+      <p>
+        Keep smiling Dhanashri!<br>
+        Have the most wonderful birthday ever. 🌷
+      </p>
+
+      <div style="font-size:40px;margin-top:15px">
+        💗 🎀 💗
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with ❤️ and lots of care.
+  <br>
+  Happy Birthday Dhanashri 🎂
+</footer>
+
+<script>
+function showSurprise() {
+  document.getElementById("surprise").style.display = "block";
+}
+</script>
+
+</body>
+</html>
